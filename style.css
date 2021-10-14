@@ -134,7 +134,7 @@ body{
 
 @media (min-width:810px ) {
   .container{
-    min-width: 50%;
+    min-width: 30%;
   }
   .image-cont{
     min-width: 80%;
