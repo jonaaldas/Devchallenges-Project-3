@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Montserrat;
+}
+body{
+  /* min-height: 100vh;
+  width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+/* styles */
+.wrapper-1{
+  display: grid;
+  justify-items: center;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 350px;
+  width: 360px;
+}
+.cont-1{
+  /* background-color: #bbb; */
+  display: grid;
+  justify-items: center;
+  padding: 50px 50px 20px 50px;
+  font-size: 14px;
+}
+.cont-2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.cont-1-img{
+  background-image: url("/Assets/profilePhoto.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat; 
+  /* background: #C4C4C4; */
+  border-radius: 16px;
+  width: 101.76px;
+  height: 101.76px; 
+  margin-bottom: 20px;
+}
+
+.cont{
+  background: #E5E5E5;
+  border-radius: 12px;
+  font-size: 12px;
+  width: 78px;
+  height: 52px;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.cont-2-1{
+  justify-self: end;
+}
+.cont-2-3{
+  justify-self: start;
+}
+
+/* img cont */
+.wrapper-2{
+  display: grid;
+  justify-items: center;
+}
+.image-cont{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+  padding: 10px 30px 0 30px;
+  width: 360px;
+}
+
+.img{
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 109.52px;
+  border-radius: 12px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-1{
+  background-image: url("/Assets/photo1.png");
+}
+
+.img-2{
+  background-image: url("/Assets/photo2.png");
+  grid-column: span 2
+}
+
+.img-3{
+  background-image: url("/Assets/photo3.png");
+  grid-column: span 2
+}
+
+.img-4{
+  background-image: url("/Assets/photo_4.png");
+  grid-row: span 3;
+  height: 100%;
+}
+
+.img-5{
+  background-image: url("/Assets/photo5.png");
+}
+
+.img-6{
+  background-image: url("/Assets/photo6.png");
+}
+
+@media (min-width:810px ) {
+  .container{
+    min-width: 50%;
+  }
+  .image-cont{
+    min-width: 80%;
+    max-width: 90%;
+    max-height: 100vh;
+  }
+
+  .img{
+    min-height: 300px;
+  }
+}
